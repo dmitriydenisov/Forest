@@ -1,0 +1,141 @@
+.persone{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 135px;
+}
+.persone__item{
+	margin-bottom: 20px;
+	max-width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: 768px){
+		margin-bottom: 0;
+		max-width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+.persone__image {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	width: 216px;
+	height: 216px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 27px;
+	
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	
+	background-image: url("../img/placeholders/user-avatar-placeholder-small.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.persone__hover{
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 24px;
+	background-color: rgba(15, 17, 23, 0.75);
+	color: #FFF;
+	/* display: none; */
+	-webkit-transition: all 0.5s ease-in;
+	   -moz-transition: all 0.5s ease-in;
+	    -ms-transition: all 0.5s ease-in;
+	     -o-transition: all 0.5s ease-in;
+	        transition: all 0.5s ease-in;
+	        opacity: 0;
+    /* transition: opacity .5s; */
+	
+	p{
+		font-size: 11px;
+		padding-right: 30px;
+		line-height: 1.3;
+		font-family: 'Lato';
+		margin-right: auto;
+		margin-left: auto;
+		
+	}
+	.fa{
+		font-size: 14px;
+		padding: 5px;
+		margin-top: 14px;
+		margin-right: 21px;
+		color: #000;
+		background-color: #FFF; 
+		width: 25px;
+		height: 25px;
+		-webkit-border-radius: 50px;
+		        border-radius: 50px;
+	}
+	
+	.persone__hover--icon{
+		position: absolute;
+		width: 23px;
+		height: 23px;
+		font-size: 24px;		
+		a{
+			-webkit-transition: all 0.5s ease-in;
+			   -moz-transition: all 0.5s ease-in;
+			    -ms-transition: all 0.5s ease-in;
+			     -o-transition: all 0.5s ease-in;
+			        transition: all 0.5s ease-in;
+			&:hover{
+				background-color: @yellow;
+				text-decoration: none;
+			}
+		}
+		}
+
+		.persone__hover--facebook{
+		position: absolute;
+		top: 128px;
+		left: 44px;
+		}
+		.persone__hover--twitter{
+		position: absolute;
+		bottom: 41px;
+		left: 97px;
+		}
+		.persone__hover--inst{
+		position: absolute;
+		top: 128px;
+		right: 44px;
+		}
+
+	.persone__hover--description{
+		margin-top: 165px;
+		margin-left: 12px;
+		width: 100%;
+		font-size: 24px;
+		}		
+	}
+
+
+.persone__image:hover .persone__hover{
+	display: block;
+	/* bottom:0%; */
+	opacity: 1;
+}
+
+.persone__name {
+	font-size: 24px;
+	font-weight: 700;
+}
+.persone__spec {
+	font-size: 14px;
+	color: #AFBFC6;
+}
+.persone__desc {
+	font-family: 'Lato';
+	color: #72848C;
+	line-height: 26px;
+	font-size: 12px;
+}
